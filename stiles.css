@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-image: url(./images/fondo-linktree.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen-perfil {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 20px;
+    color: #fff;
+    padding: 30px 0px 5px 0;
+}
+h2{
+    font-size: 16px;
+    color: #fff;
+}
+
+.perfil-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 584px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.link-redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: rgb(87, 97, 138);
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px; 
+    border: 2px solid rgb(0,0,0);
+    cursor: pointer; 
+    box-shadow: rgb(0,0,0) 8px 8px 0px 0px;
+}
+
+.link-redes:hover {
+    transform: translate(4px, 4px);
+    box-shadow: rgb(0,0,0) 4px 4px 0px 0px;
+}
+
+.icono-links {
+    height: 32px;
+    width: 32px;
+}
+
+.btn-top-bar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background-color: rgb(87, 97, 138);
+    opacity: 0.75;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.btn-top-bar:hover {
+    opacity: 0.5;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 584px;
+    margin: 0 auto;
+    padding: 30px 0px 0px 0px;
+    
+}
+.socialIcon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+.link-social {
+    color: #fff;
+    transition: all .5s ease;
+}
+.link-social:hover {
+    transform: scale(1.2);
+}
+.link-redes button {
+    background-color: #fff;
+    border: none;
+    color: rgb(175, 183, 218);
+    cursor: pointer;
+}
+.link-redes button:hover {
+    color: rgb(87, 97, 138);
+}
