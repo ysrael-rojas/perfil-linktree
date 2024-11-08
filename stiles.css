@@ -263,3 +263,7 @@ form button {
     border-radius: 50px;
     cursor: pointer;
 }
+
+.link-redes i {
+    font-size: 25px;
+}
