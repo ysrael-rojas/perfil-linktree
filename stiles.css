@@ -238,4 +238,29 @@ h2{
     opacity: 0.8;
 }
 
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    background-color: #eeeeee;
+    color: rgb(168 170 162);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form button {
+    background-color: rgb(168 170 162);
+    color: #ffffff;
+    padding: 15px 30px;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
 

@@ -44,10 +44,10 @@
                 </a>
             </div>
             <div class="link-container">
-                <a class="link-redes" href="#">
+                <a id="btn-email" class="link-redes" href="#">
                     <i class="fa-regular fa-envelope fa-2x"></i>
                     <span>Email</span>
-                    <button id="btn-email" class="btn-open-modal"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <button class="btn-open-modal"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                 </a>
             </div>       
         </div>
@@ -97,6 +97,22 @@
                             </a>
                         </div>
                     </div>
+                    
+                </div>
+            </div>
+
+            <!-- Ventana Modal para enviar Email-->
+            <div id="myModal-email" class="modal">
+                <div class="modal-content">
+                    <i id="closeModalBtn-email" class="fa-solid fa-xmark close"></i>
+                    <h3>Email</h3>
+                    <form>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre*" required>
+                        <input type="text" id="email" name="email" placeholder="Correo electronico*" required>
+                        <textarea name="message" id="message" placeholder="Mensaje*" required></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
                     
                 </div>
             </div>
