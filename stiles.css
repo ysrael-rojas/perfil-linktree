@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
 }
@@ -13,7 +13,7 @@ body {
 }
 
 .main-container {
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 .imagen-perfil {
@@ -25,9 +25,10 @@ body {
 h1 {
     font-size: 20px;
     color: #fff;
-    padding: 30px 0px 5px 0;
+    padding: 30px 0 5px 0;
 }
-h2{
+
+h2 {
     font-size: 16px;
     color: #fff;
 }
@@ -40,7 +41,7 @@ h2{
     text-align: center;
     max-width: 584px;
     margin: 0 auto;
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0 0 0;
 }
 
 .links-container {
@@ -51,6 +52,8 @@ h2{
     margin: 0 auto;
     padding: 30px 0;
 }
+
+/* LINK REDES */
 .link-redes {
     display: flex;
     justify-content: space-between;
@@ -64,15 +67,14 @@ h2{
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 16px; 
-    border: 2px solid rgb(0,0,0);
-    cursor: pointer; 
-    box-shadow: rgb(0,0,0) 8px 8px 0px 0px;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: rgb(0, 0, 0) 8px 8px 0 0;
 }
 
 .link-redes:hover {
     transform: translate(4px, 4px);
-    box-shadow: rgb(0,0,0) 4px 4px 0px 0px;
+    box-shadow: rgb(0, 0, 0) 4px 4px 0 0;
 }
 
 .icono-links {
@@ -89,7 +91,7 @@ h2{
     color: #fff;
     background-color: rgb(87, 97, 138);
     opacity: 0.75;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     cursor: pointer;
 }
 
@@ -103,57 +105,57 @@ h2{
     align-items: center;
     max-width: 584px;
     margin: 0 auto;
-    padding: 30px 0px 0px 0px;    
+    padding: 30px 0 0 0;
 }
+
 .socialIcon-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 30px 0;
 }
+
 .link-social {
     color: #fff;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
+
 .link-social:hover {
     transform: scale(1.2);
 }
+
 .link-redes button {
     background-color: #fff;
     border: none;
     color: rgb(175, 183, 218);
     cursor: pointer;
 }
+
 .link-redes button:hover {
     color: rgb(87, 97, 138);
 }
 
-
-
-/* Estilos de la ventana modal */
 .modal {
-    display: none; /* Oculto por defecto */
+    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
-    align-items: flex-end; /* Alinea el contenido al final (abajo) */
+    align-items: flex-end;
 }
 
-/* Contenido de la modal */
 .modal-content {
     background-color: white;
     padding: 20px;
     width: 100%;
     max-width: 600px;
     border-radius: 10px 10px 0 0;
-    animation: slideUp 0.5s ease forwards; /* Animación para que suba */
+    animation: slideUp 0.5s ease forwards;
 }
 
-/* Animación para deslizar el modal de abajo hacia arriba */
 @keyframes slideUp {
     from {
         transform: translateY(100%);
@@ -163,7 +165,6 @@ h2{
     }
 }
 
-/* Estilo para el botón de cerrar */
 .close {
     float: right;
     font-size: 24px;
@@ -178,7 +179,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0px;
+    padding: 20px 0;
     gap: 20px;
 }
 
@@ -199,7 +200,6 @@ h2{
     color: white;
 }
 
-/* Estilo para los nombres de las redes sociales */
 .icon-container p {
     margin-top: 10px;
     font-size: 14px;
@@ -210,60 +210,56 @@ h2{
     font-size: 28px;
 }
 
-/* Colores personalizados para cada red social */
 .linktree {
-    background-color: #E0E0E0; /* Gris claro */
-    color: #000; /* Negro */
+    background-color: #E0E0E0;
+    color: #000;
 }
 
 .twitter {
-    background-color: #000000; /* Negro para X */
+    background-color: #000000;
 }
 
 .facebook {
-    background-color: #1877F2; /* Azul Facebook */
+    background-color: #1877F2;
 }
 
 .whatsapp {
-    background-color: #25D366; /* Verde WhatsApp */
+    background-color: #25D366;
 }
 
 .linkedin {
-    background-color: #0A66C2; /* Azul LinkedIn */
+    background-color: #0A66C2;
 }
 
 .messenger {
-    background: linear-gradient(135deg, #00B2FF 0%, #FF5EBD 100%); /* Gradiente azul-rosado para Messenger */
+    background: linear-gradient(135deg, #00B2FF 0%, #FF5EBD 100%);
 }
 
-/* Efecto hover para todos los iconos */
 .social-link:hover {
     opacity: 0.8;
 }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
 input, textarea {
     width: 100%;
     padding: 15px;
-    margin: 10px 0px;
+    margin: 10px 0;
     border: 1px solid #ccc;
     background-color: #eeeeee;
-    color: rgb(168 170 162);
+    color: rgb(168, 170, 162);
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 16px;
+    font-weight: bold;
 }
 
 form button {
-    background-color: rgb(168 170 162);
+    background-color: rgb(168, 170, 162);
     color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
     padding: 15px 30px;
     width: 100%;
     border: none;
     border-radius: 50px;
     cursor: pointer;
 }
-
