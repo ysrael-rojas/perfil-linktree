@@ -12,6 +12,10 @@ body {
     background-position: center;
 }
 
+.main-container {
+    padding: 0px 20px;
+}
+
 .imagen-perfil {
     height: 100px;
     width: auto;
@@ -33,6 +37,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px 0px 0px 0px;
 }
 
 .links-container {
@@ -75,6 +80,7 @@ h2{
 .btn-top-bar {
     height: 40px;
     width: 40px;
+    position: fixed;
     border-radius: 50%;
     border: none;
     color: #fff;
@@ -94,8 +100,7 @@ h2{
     align-items: center;
     max-width: 584px;
     margin: 0 auto;
-    padding: 30px 0px 0px 0px;
-    
+    padding: 30px 0px 0px 0px;    
 }
 .socialIcon-container {
     display: flex;
@@ -119,3 +124,118 @@ h2{
 .link-redes button:hover {
     color: rgb(87, 97, 138);
 }
+
+
+
+/* Estilos de la ventana modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    justify-content: center;
+    align-items: flex-end; /* Alinea el contenido al final (abajo) */
+}
+
+/* Contenido de la modal */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px 10px 0 0;
+    animation: slideUp 0.5s ease forwards; /* Animación para que suba */
+}
+
+/* Animación para deslizar el modal de abajo hacia arriba */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para el botón de cerrar */
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal h3 {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 20px;
+}
+
+.icon-container {
+    text-align: center;
+}
+
+.social-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+/* Estilo para los nombres de las redes sociales */
+.icon-container p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.social-link i {
+    font-size: 28px;
+}
+
+/* Colores personalizados para cada red social */
+.linktree {
+    background-color: #E0E0E0; /* Gris claro */
+    color: #000; /* Negro */
+}
+
+.twitter {
+    background-color: #000000; /* Negro para X */
+}
+
+.facebook {
+    background-color: #1877F2; /* Azul Facebook */
+}
+
+.whatsapp {
+    background-color: #25D366; /* Verde WhatsApp */
+}
+
+.linkedin {
+    background-color: #0A66C2; /* Azul LinkedIn */
+}
+
+.messenger {
+    background: linear-gradient(135deg, #00B2FF 0%, #FF5EBD 100%); /* Gradiente azul-rosado para Messenger */
+}
+
+/* Efecto hover para todos los iconos */
+.social-link:hover {
+    opacity: 0.8;
+}
+
+

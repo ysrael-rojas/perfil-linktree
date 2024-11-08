@@ -9,54 +9,102 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 <body>
-    <div class="top-bar">
-        <button class="btn-top-bar"><i class="fa-solid fa-ellipsis"></i></button>
-    </div>
-    <div class="perfil-container">
-        <img class="imagen-perfil" src="./images/imagen-perfil.jpeg" alt="foto-perfil">
-        <h1>Ysrael Rojas Rojas</h1>
-        <h2>Community focused artist, with a taste for everything local</h2>
-    </div>
+    <main class="main-container">
+        <div class="top-bar">
+            <button id="button-top-bar" class="btn-top-bar btn-open-modal"><i class="fa-solid fa-ellipsis"></i></button>
+        </div>
+        <div class="perfil-container">
+            <img class="imagen-perfil" src="./images/imagen-perfil.jpeg" alt="foto-perfil">
+            <h1>Ysrael Rojas Rojas</h1>
+            <h2>Community focused artist, with a taste for everything local</h2>
+        </div>
+        
+        <div id="div-links-container" class="links-container">
+            <div class="link-container">
+                
+                <a class="link-redes" href="#">
+                    <i class="fa-solid fa-calendar-day fa-2x"></i>
+                    <span>Tour dates</span>
+                    <button id="btn-dates" class="btn-open-modal"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </a>
+                
+            </div>
+            <div class="link-container">
+                <a class="link-redes" href="#">
+                    <i class="fa-brands fa-discord fa-2x"></i>
+                    <span>Our Discord</span>
+                    <button id="btn-discord" class="btn-open-modal"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </a>
+            </div>
+            <div class="link-container">
+                <a class="link-redes" href="#">
+                    <i class="fa-solid fa-link fa-2x"></i>
+                    <span>Website</span>
+                    <button id="btn-website" class="btn-open-modal"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </a>
+            </div>
+            <div class="link-container">
+                <a class="link-redes" href="#">
+                    <i class="fa-regular fa-envelope fa-2x"></i>
+                    <span>Email</span>
+                    <button id="btn-email" class="btn-open-modal"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </a>
+            </div>       
+        </div>
+        <div class="socialIcon-container">
+            <a class="link-social" href="#"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+            <a class="link-social" href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a class="link-social" href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a class="link-social" href="#"><i class="fa-brands fa-spotify fa-2x"></i></a>
     
-    <div class="links-container">
-        <div class="link-container">
-            
-            <a class="link-redes" href="#">
-                <i class="fa-solid fa-calendar-day fa-2x"></i>
-                <span>Tour dates</span>
-                <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
-            </a>
-            
         </div>
-        <div class="link-container">
-            <a class="link-redes" href="#">
-                <i class="fa-brands fa-discord fa-2x"></i>
-                <span>Our Discord</span>
-                <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
-            </a>
-        </div>
-        <div class="link-container">
-            <a class="link-redes" href="#">
-                <i class="fa-solid fa-link fa-2x"></i>
-                <span>Website</span>
-                <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
-            </a>
-        </div>
-        <div class="link-container">
-            <a class="link-redes" href="#">
-                <i class="fa-regular fa-envelope fa-2x"></i>
-                <span>Email</span>
-                <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
-            </a>
-        </div>       
-    </div>
-    <div class="socialIcon-container">
-        <a class="link-social" href="#"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
-        <a class="link-social" href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
-        <a class="link-social" href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-        <a class="link-social" href="#"><i class="fa-brands fa-spotify fa-2x"></i></a>
+        <div class="container">
 
-    </div>
+            <!-- Ventana Modal para compartir link-->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <i id="closeModalBtn" class="fa-solid fa-xmark close"></i>
+                    <h3>Share Linktree</h3>
+                    <div class="social-icons">
+                        <div class="icon-container">
+                            <a href="#" class="social-link linktree">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                        <div class="icon-container">
+                            <a href="#" class="social-link twitter">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="icon-container">
+                            <a href="#" class="social-link facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="icon-container">
+                            <a href="#" class="social-link whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <div class="icon-container">
+                            <a href="#" class="social-link linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="icon-container">
+                            <a href="#" class="social-link messenger">
+                                <i class="fab fa-facebook-messenger"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+    
     
 </body>
 </html>
