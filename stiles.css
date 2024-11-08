@@ -37,6 +37,9 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    max-width: 584px;
+    margin: 0 auto;
     padding: 20px 0px 0px 0px;
 }
 

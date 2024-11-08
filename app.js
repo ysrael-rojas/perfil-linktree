@@ -1,3 +1,7 @@
+//VARIABLES QUE APARECERAN AL CARGAR LA PAGINA
+const nombre = 'Ysrael Rojas Rojas';
+const descripcion = 'Emocionado por conectar con otros desarrolladores, compartir conocimientos y contribuir a proyectos interesantes';
+
 //OBTENEMOS ELEMENTOS DEL DOM
 const buttonsShare = document.querySelectorAll('.btn-open-modal');
 const buttonEmail = document.getElementById('btn-email');
@@ -9,7 +13,8 @@ const closeModalBtnEmail = document.getElementById('closeModalBtn-email');
 //ABRIMOS EL MODAL "COMPARTIR LINKS" CADA VES QUE HACEMOS CLICK EN EL ICONO DE 3 PUNTOS
 buttonsShare.forEach(button => {
     button.addEventListener('click', (event) => {
-        event.stopPropagation();
+        event.preventDefault();
+        event.stopPropagation();        
         modal.style.display = 'flex'; // Mostrar la modal
     });
 });
@@ -37,5 +42,14 @@ window.addEventListener('click', (event) => {
     if (event.target === modalEmail) {        
         modalEmail.style.display = 'none';
     }
+});
+
+//EVENTO QUE ASIGNARA VALORES A LAS ETIQUETAS h1 Y h2 AL CARGAR LA PAGINA
+window.addEventListener('load', () => {
+    const h1 = document.getElementById('nombre');
+    const h2 = document.getElementById('descripcion');
+
+    h1.textContent = nombre;
+    h2.textContent = descripcion;
 });
 
